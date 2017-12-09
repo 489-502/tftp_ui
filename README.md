@@ -36,7 +36,7 @@ tftp tool for ecid
 7. tftp消息头、版本消息、err消息直接显示在*Log*文本框中。
 
 ## 使用注意事项:
-* 本工具目前仅支持PDDM5板卡
+* 本工具目前仅支持PDDM5板卡。
 * PDDM5板卡的监测信息：
 
 监测信息 | 文件名 | CPU
@@ -47,6 +47,7 @@ tftp tool for ecid
 道岔驱动电流 | ftp_phase | CPUB
 故障信息 | ftp_err | CPUA or CPUB 
 
+* 使用前请关闭防火墙。
 * 有问题联系：hetiantian@casco.com.cn
 
 ## 扩展其他板卡
