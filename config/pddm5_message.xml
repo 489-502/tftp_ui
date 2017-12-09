@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Msg_Type是关键字，Msg_Id对应与消息的类型id PackType是消息打包方式"!"表示大端-->
+<Msg_Settings>
+    <Msg Name="ftp_vers" Id="1" Pack="!">
+      <Item Index="0" Format="Q" Name="SwVersionA" Description="SwVersionA"/>
+      <Item Index="1" Format="Q" Name="SwVersionB" Description="SwVersionB"/>
+      <Item Index="2" Format="I" Name="SwCRC_CPUA" Description="SwCRC_CPUA"/>
+      <Item Index="3" Format="I" Name="SwCRC_CPUB" Description="SwCRC_CPUB"/>
+      <Item Index="4" Format="H" Name="FPGAVer_A" Description="FPGAVer_A"/>
+      <Item Index="5" Format="H" Name="FPGAVer_B" Description="FPGAVer_B"/>	  
+    </Msg>    
+    <Msg Name="ftp_volt" Id="98" Pack="!">
+      <Item Index="0" Format="B" Name="Drive_Voltage_C" Description="Phase C Drive Voltage"/>
+	  <Item Index="1" Format="B" Name="Drive_Voltage_B" Description="Phase B Drive Voltage"/>
+	  <Item Index="2" Format="B" Name="Drive_Voltage_A" Description="Phase A Drive Voltage"/>
+    </Msg>  
+	<Msg Name="ftp_indi" Id="97" Pack="!">
+      <Item Index="0" Format="H" Name="Indi_Voltage" Description="Indication Voltage"/>
+      <Item Index="1" Format="H" Name="BS_IN1_Current" Description="The current of inside reverse indication branch"/>
+	  <Item Index="2" Format="H" Name="BS_OUT1_Current" Description="The current of outside reverse indication branch"/>
+	  <Item Index="3" Format="H" Name="BS_IN2_Current" Description="The current of inside normal indication branch"/>
+	  <Item Index="4" Format="H" Name="BS_OUT2_Current" Description="The current of outside normal indication branch"/>
+	</Msg>  
+	<Msg Name="ftp_phase" Id="96" Pack="!">
+      <Item Index="0" Format="B" Name="Current_C" Description="Drive current of phase C"/>
+      <Item Index="1" Format="H" Name="Phase_C" Description="Phase angle of Drive current C"/>
+	  <Item Index="2" Format="B" Name="Current_B" Description="Drive current of phase B"/>
+	  <Item Index="3" Format="H" Name="Phase_B" Description="Phase angle of Drive current B"/>
+	  <Item Index="4" Format="B" Name="Current_A" Description="Drive current of phase A"/>
+	  <Item Index="5" Format="H" Name="Phase_A" Description="Phase angle of Drive current A"/>
+	</Msg>
+	<Msg Name="ftp_err_rly" Id="286331153" Pack="!">
+      <Item Index="0" Format="I" Name="Contactor_Id" Description="Contactor Id"/>
+      <Item Index="1" Format="B" Name="Is_Contactor_Close" Description="Is Contactor close, 1 is close, 0 is open"/>
+	  <Item Index="2" Format="B" Name="24V_state" Description="24V state, 1 is present, 0 is missing"/>
+	  <Item Index="3" Format="H" Name="ReadBack_Value" Description="Readback value of Contactor, 0 is close, 1 is open"/>
+	</Msg>
+	<Msg Name="ftp_err_indi" Id="572662306" Pack="!">
+      <Item Index="0" Format="I" Name="Indication_Branch_Id" Description="Indication Branch Id"/>
+      <Item Index="1" Format="B" Name="Is_Branch_Close" Description="Is Branch close, 1 is close, 0 is open"/>
+	  <Item Index="2" Format="I" Name="RMS" Description="RMS value of the Branch(mA)"/>
+	  <Item Index="3" Format="H" Name="Cnt_Pos" Description="Count of positive sample in indication current wave"/>
+	  <Item Index="3" Format="H" Name="Cnt_Neg" Description="Count of negative sample in indication current wave"/>
+	  <Item Index="3" Format="H" Name="Cnt_Zero" Description="Count of zero sample in indication current wave"/>
+	  <Item Index="3" Format="I" Name="Shape" Description="shape of the indication current wave, 0: Full; 1:Half positive; 2:Half negative; 3:Zero"/>
+	</Msg>	
+</Msg_Settings>
