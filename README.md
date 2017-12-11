@@ -39,13 +39,13 @@ tftp tool for ecid
 * 本工具目前仅支持PDDM5板卡。
 * PDDM5板卡的监测信息：
 
-监测信息 | 文件名 | CPU
-- | - | -
-版本信息 | ftp_vers | CPUA
-道岔表示电压和电流信息 | ftp_indi | CPUB
-道岔驱动电压 | ftp_volt | CPUB
-道岔驱动电流 | ftp_phase | CPUB
-故障信息 | ftp_err | CPUA or CPUB 
+| 监测信息 | 文件名 | CPU |
+| - | - | - |
+| 版本信息 | ftp_vers | CPUA |
+| 道岔表示电压和电流信息 | ftp_indi | CPUB |
+| 道岔驱动电压 | ftp_volt | CPUB |
+| 道岔驱动电流 | ftp_phase | CPUB |
+| 故障信息 | ftp_err | CPUA or CPUB |
 
 * 使用前请关闭防火墙。
 * 有问题联系：hetiantian@casco.com.cn
