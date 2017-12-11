@@ -1,10 +1,6 @@
 # tftp_ui
-tftp tool for ecid
+tftp tool for ecid  
 获取ecid tftp监测数据并图形化显示
-
-[//]: # (Image References)
-[image1]: ./images/layout.png
-[image2]: ./images/visualization.png
 
 ## 预期读者
 工具使用者
@@ -19,9 +15,9 @@ tftp tool for ecid
 ## 使用说明
 1. 配置本机IP，与EIOCOM2 IP处于一个网段。
 
-2. 打开程序，界面如下图所示：
+2. 打开程序，界面如下图所示： 
 
- ![alt text][image1]
+![alt text](https://raw.githubusercontent.com/489-502/tftp_ui/master/images/layout.PNG)
 
 3. 输入EIOCOM2 IP，若可以`ping`通，继续；否则，先查网络问题。
 
@@ -29,9 +25,9 @@ tftp tool for ecid
 
 5. 点击*fetch*，可获取相应文件；点击*fetch and show*，可获取相应文件并显示；点击*show*，可显示弹出对话框中选择的文件。
 
-6. 图形化显示如下图所示：
+6. 图形化显示如下图所示： 
 
- ![alt text][image2]
+ ![alt text](https://raw.githubusercontent.com/489-502/tftp_ui/master/images/visualization.PNG)
 
 7. tftp消息头、版本消息、err消息直接显示在*Log*文本框中。
 
