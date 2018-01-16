@@ -271,5 +271,5 @@ if __name__ == '__main__':
     x = XmlParser()
     #x.loadXmlFile(r'./varint.xml')
     x.loadXmlFile( r'./message.xml' )
-    print x.getAllElementByName( r'.//Msg' )
+    #print x.getAllElementByName( r'.//Msg' )
     x.closeXmlFile()
