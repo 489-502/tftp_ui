@@ -17,12 +17,6 @@
 #               添加导入车辆路径方法
 #               update 2011-07-29
 #               pack,unpack添加异常处理
-#               update 2011-07-29 add by xiongkunpeng
-#               添加逻辑处理函数部分
-#               update 2011-08-09 add by xiongkunpeng
-#               使得checkrule能够支持float类型的变量，并且添加用户自己写的rule的导入计算
-#               update: 2011-08-09 add by xiongkunpeng
-#               添加用户rule脚本支持
 #----------------------------------------------------------------------------
 from xmlparser import XmlParser
 from lxml import etree
